@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "izmainas-v2"
+    }
+  },
+  "defaultProject": "izmainas-v2",
+  "cli": {
+    "analytics": false
+  }
 }
