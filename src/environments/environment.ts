@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  studentsToday: 'https://localhost:5001/api/v1/records/studentstoday',
+  studentsTomorrow: 'https://localhost:5001/api/v1/records/studenttomorrow',
+  teachersToday: 'https://localhost:5001/api/v1/records/teachertoday',
+  teachersTomorrow: 'https://localhost:5001/api/v1/records/teachertomorrow'
 };
 
 /*
