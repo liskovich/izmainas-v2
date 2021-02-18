@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="card-header">
+
+  </div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <p class="card-text">klase: {{classModel.class}}</p>
+        <div *ngFor="let lsn of lessons">
+
+            <div *ngFor="let rm of lsn.rooms">
+
+              <div *ngIf="rm.note != null">
+                <p class="card-text">stunda: {{lsn.lessonNumber}}</p>
+                <p class="card-text">telpa: {{rm.room}}</p>
+                <p class="card-text">priekšmets: {{rm.subject}}</p>
+                <p class="card-text">skolotājs: {{rm.teacherName}}</p>
+                <p class="card-text">piezīme: {{rm.note.noteText}}</p>
+                <p class="card-text">laiks: {{rm.note.createdDate}}</p>
+              </div>
+
+            </div>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

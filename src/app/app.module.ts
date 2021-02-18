@@ -9,17 +9,21 @@ import { CommonModule } from '@angular/common';
 
 //components
 import { AppComponent } from './app.component';
+import { StudentsTodayComponent } from './components/students-today/students-today.component';
+import { StudentsCardComponent } from './components/students-card/students-card.component';
 
 //services
 import { RecordsService } from './services/records.service';
 
 const appRoutes: Routes = [
-  //{ path: '', component: }
+  { path: '', component: StudentsTodayComponent }
 ]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StudentsTodayComponent,
+    StudentsCardComponent
   ],
   imports: [
     BrowserModule,
